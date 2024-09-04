@@ -10,43 +10,48 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            /* Add background image here when available */
-            background-color: #333; /* Fallback background color */
+            /* Light background image */
+            background-image: url('path_to_your_image.jpg'); /* Replace with your image path */
+            background-color: #f7f7f7; /* Fallback background color */
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            color: #fff;
+            color: #333;
         }
 
         .container {
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .resume-header {
-            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
+            background: rgba(255, 255, 255, 0.8); /* Light transparent overlay for better readability */
         }
 
-        h1 {
-            margin: 0;
-            font-size: 50px;
-            color: #f7c08a; /* Warm color to match coffee theme */
-        }
-
-        p {
-            font-size: 18px;
-            color: #f0f0f0;
-        }
-
-        .skills {
-            margin: 50px 0;
+        .resume-details {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.6);
+            background: #fff;
             border-radius: 10px;
-            display: inline-block;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .resume-header h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .resume-header p {
+            font-size: 16px;
+            color: #666;
         }
 
         .skills ul {
@@ -55,37 +60,48 @@
         }
 
         .skills ul li {
-            font-size: 20px;
+            font-size: 18px;
             padding: 5px 0;
         }
 
         .footer {
-            margin-top: 50px;
+            margin-top: 20px;
             font-size: 14px;
+            text-align: center;
         }
     </style>
 </head>
-<body style="background-image: url('background (2).jpg');">
+<body>
     <div class="container">
-        <div class="resume-header">
-            <h1>Suhani</h1>
-            <p>Beautiful, Soft-hearted, and Creative Professional</p>
-        </div>
+        <div class="resume-details">
+            <!-- Left section: Header -->
+            <div class="section resume-header">
+                <h1>Suhani</h1>
+                <p>Beautiful, Soft-hearted, and Creative Professional</p>
+            </div>
 
-        <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Design Thinking</li>
-                <li>Project Management</li>
-                <li>Creative Writing</li>
-                <li>Team Collaboration</li>
-            </ul>
-        </div>
+            <!-- Middle section: Skills -->
+            <div class="section skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Design Thinking</li>
+                    <li>Project Management</li>
+                    <li>Creative Writing</li>
+                    <li>Team Collaboration</li>
+                </ul>
+            </div>
 
-        <div class="footer">
-            <p>Contact: suhani@example.com | Phone: +91-1234567890</p>
+            <!-- Right section: Contact Info -->
+            <div class="section contact-info">
+                <h2>Contact</h2>
+                <p>Email: suhani@example.com</p>
+                <p>Phone: +91-1234567890</p>
+            </div>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Suhani's Resume | All rights reserved.</p>
     </div>
 </body>
 </html>
-
