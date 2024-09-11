@@ -3,105 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Suhani's Resume</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            /* Light background image */
-            background-image: url('background (2).jpg'); /* Replace with your image path */
-            background-color: #f7f7f7; /* Fallback background color */
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            color: #333;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.8); /* Light transparent overlay for better readability */
-        }
-
-        .resume-details {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            max-width: 1200px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .section {
-            flex: 1;
-            margin: 0 20px;
-        }
-
-        .resume-header h1 {
-            font-size: 36px;
-            color: #333;
-        }
-
-        .resume-header p {
-            font-size: 16px;
-            color: #666;
-        }
-
-        .skills ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .skills ul li {
-            font-size: 18px;
-            padding: 5px 0;
-        }
-
-        .footer {
-            margin-top: 20px;
-            font-size: 14px;
-            text-align: center;
-        }
-    </style>
+    <title>Hi! I am Suhani Shrivastav</title>
+    
 </head>
-<body>
-    <div class="container">
-        <div class="resume-details">
-            <!-- Left section: Header -->
-            <div class="section resume-header">
-                <h1>Suhani</h1>
-                <p>Beautiful, Soft-hearted, and Creative Professional</p>
-            </div>
+<style> 
+   body {
+        margin: 0;
+        padding: 0;
+        background-image: url('suhani.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        position: relative;
+       }
 
-            <!-- Middle section: Skills -->
-            <div class="section skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Design Thinking</li>
-                    <li>Project Management</li>
-                    <li>Creative Writing</li>
-                    <li>Team Collaboration</li>
-                </ul>
-            </div>
+       /* Add a semi-transparent overlay */
+       body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1); /* Adjust the opacity to reduce intensity */
+        z-index: 0;
+       }
+   h1 {
+    text-align: center;
+    color:black;
+    margin: 0px 0px;
+    }
+    p{
+        text-align: center;
+    }
+    .main3{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 500px;
+        width: 1500px;
+    }
+    @media (max-width: 100px) {
+  .main3 {
+    flex-direction: column;
+  }
+}
+    .main3 >div{
+    
+        margin: 10px;
+        font-size: 30px;
+        border: 2px solid black;
+        width:500px;
+        align-items: center;
+        border-radius: 30px;
+        text-align: center;
+        display: table-column;
 
-            <!-- Right section: Contact Info -->
-            <div class="section contact-info">
-                <h2>Contact</h2>
-                <p>Email: suhani@example.com</p>
-                <p>Phone: +91-1234567890</p>
-            </div>
+    }
+    .main4{
+        display: flex;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    img{
+        border-radius: 50%;
+        padding: 50px;
+    }
+
+    .skills-list, .education-list, .experience-list {
+        list-style-type: none;
+        padding: 10px;
+        margin: 0;
+        font-size: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 5px;
+        height: fit-content;
+       }
+       .skills-list li, .education-list li, .experience-list li {
+        padding: 0px 0;
+        text-align: center;
+    
+       }
+       .skills-list{
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 80px;
+        height:fit-content;
+
+       }
+       h4{
+        margin: 0px;
+        padding: 0px;
+        margin-top: 40px;
+        
+    }
+    .education-list, .experience-list {
+        padding:60px;
+    }
+  
+
+    
+</style>
+<body></body>
+    <h1>Suhani Srivastav</h1>
+    <p>I specialize in financial management, strategic planning,
+         and cost control. My expertise lies in analyzing financial data, 
+         budgeting, and optimizing resources to drive business growth.
+          I ensure informed decision-making through insights into financial 
+          performance and long-term sustainability.</p>
+    
+    <div class="main3">
+        <div><img src="photo.jpg" width="300px" height="300px"></div>
+        <div>
+            <h4>SKILLS</h4>
+            <ul class="skills-list">
+                <li><strong>1. Financial Management:</strong> experts in managing financial functions,ensuring cost control, managing budgets, and improving financial performance.</li>
+                <li><strong>2. Cost Accounting:</strong> proficient in analyzing the cost of production, budgeting, and pricing to help businesses optimize profitability.</li>
+                <li><strong>3. Strategic Planning:</strong> use financial data to assist companies in making long-term strategic decisions, including growth strategies and risk management.</li>
+                <li><strong>4. Risk Management:</strong> identify financial risks within an organization and propose solutions to mitigate these risks, ensuring business continuity and stability.</li>
+                <li><strong>5. Regulatory Compliance:</strong> well-versed in financial regulations and compliance standards, ensuring the company adheres to tax laws, financial reporting standards, and corporate governance.</li>
+            </ul>
+        </div>
+        <div>
+            <h4>EDUCATION</h4>
+            <ul class="education-list">
+                <li>Semi Qualified CMA</li>
+                <li>Bachelor's of commerec</li>
+            </ul>
+        </div>
+        <div>
+            <h4>EXPERIENCE</h4>
+            <ul class="experience-list">
+                <li>Trainee at NLC india Ltd</li>
+                <li></li>
+            </ul>
         </div>
     </div>
-
-    <div class="footer">
-        <p>© 2024 Suhani's Resume | All rights reserved.</p>
-    </div>
+    
+    <div class="main4">email id:suhaniks01@gmail.com</div>
 </body>
 </html>
